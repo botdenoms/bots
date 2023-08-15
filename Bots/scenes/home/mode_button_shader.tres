@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform vec4 color: hint_color;
+uniform bool active = true;
+
+void fragment(){
+	vec3 ALBEDO = color.rgb;
+	if (active){
+		float ALPHA = UV.x;
+		ALPHA = pow(ALPHA, 1);
+		ALPHA = smoothstep(.2, .6, ALPHA);
+		COLOR = vec4(ALBEDO, ALPHA);
+	}else{
+		COLOR = vec4(ALBEDO, 0);
+	}
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/color = Color( 0.0196078, 0.8, 0.466667, 1 )
+shader_param/active = false
