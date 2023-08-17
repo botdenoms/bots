@@ -116,3 +116,5 @@ rect_min_size = Vector2( 0, 30 )
 
 [connection signal="pressed" from="overlays/appbar/menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="overlays/actionbar/code" to="." method="_on_code_pressed"]
+[connection signal="close" from="menu" to="." method="_on_menu_close"]
+[connection signal="run" from="editor" to="." method="_on_editor_run"]

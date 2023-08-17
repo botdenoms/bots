@@ -156,3 +156,5 @@ margin_top = 782.0
 margin_right = 375.0
 margin_bottom = 812.0
 rect_min_size = Vector2( 0, 30 )
+
+[connection signal="pressed" from="VBoxContainer/MarginContainer/ColorRect/VBoxContainer/actions/run" to="." method="_on_run_pressed"]

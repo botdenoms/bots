@@ -134,3 +134,6 @@ margin_bottom = 274.0
 rect_min_size = Vector2( 0, 20 )
 
 [connection signal="pressed" from="CenterContainer/ColorRect/MarginContainer/VBoxContainer2/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CenterContainer/ColorRect/MarginContainer/VBoxContainer2/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="CenterContainer/ColorRect/MarginContainer/VBoxContainer2/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CenterContainer/ColorRect/MarginContainer/VBoxContainer2/exit" to="." method="_on_exit_pressed"]
